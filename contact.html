@@ -35,159 +35,162 @@
     
 </head>
 <body>
-<!-- Principal conteneur -->
-<div class="page-container">
+	<!-- Principal conteneur -->
+	<div class="page-container">
     
-<!-- bloc-0 -->
-<!-- SEO : remplacement de la div par un header -->
-<header class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
+	<!-- bloc-0 -->
+	<!-- SEO : remplacement de la div par un header -->
+	<header class="bloc bgc-white l-bloc " id="bloc-0">
+		<div class="container bloc-sm">
 
-		<!-- Accessibilité : ajout balisage ARIA -->
-		<div role="navigation" aria-label="main">
-			<nav class="navbar row">
-				<div class="navbar-header">
+			<!-- Accessibilité : ajout balisage ARIA -->
+			<div role="navigation" aria-label="main">
+				<nav class="navbar row">
+					<div class="navbar-header">
 
-					<!-- Accessibilité : modification du alt pour le rendre plus pertinent en y introduisant les keywords appropriés -->
-					<a class="navbar-brand" href="index.html" aria-label="Accueil"><img src="img/la-chouette-agence.png" alt="La Chouette Agence, agence de web design située à Lyon" height="40" /></a>
+						<!-- Accessibilité : modification du alt pour le rendre plus pertinent en y introduisant les keywords appropriés -->
+						<a class="navbar-brand" href="index.html" aria-label="Accueil"><img src="img/la-chouette-agence.png" alt="La Chouette Agence, agence de web design située à Lyon" height="40" /></a>
 
-					<!-- SEO : bouton "Toggle navigation" inutile supprimé -->
+						<!-- SEO : bouton "Toggle navigation" inutile supprimé -->
 
-				</div>
-				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-					<ul class="site-navigation nav navbar-nav">
+					</div>
+					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+						<ul class="site-navigation nav navbar-nav">
 
-						<!-- SEO : suppression du lien "Accueil", ce dernier renvoyant sur la page actuelle  -->
-					<!-- SEO / Accessibilité : suppression des éléments liste vides et redondants-->
-						<li>
-						<a href="index.html">Accueil</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
-</header>
-<!-- bloc-0 END -->
-
-<!-- bloc-6 -->
-<!-- SEO : remplacement de la div par une section -->
-<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" role="banner" id="bloc-6">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
-					Parlons web design !
-				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
-					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-				</p>
+							<!-- SEO : suppression du lien "Accueil", ce dernier renvoyant sur la page actuelle  -->
+							<!-- SEO / Accessibilité : suppression des éléments liste vides et redondants-->
+							<li>
+								<a href="index.html">Accueil</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- bloc-6 END -->
+	</header>
+	<!-- bloc-0 END -->
 
-<!-- bloc-7 -->
-<!-- SEO : remplacement de la div par une section -->
-<section class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-
-					<!-- Accessibilité : ajout du balisage ARIA -->
-					<div class="form-group">
-						<label for="name">
-							Nom
-						</label>
-						<input type="text" name="name" id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label for="email">
-							Adresse email
-						</label>
-						<input type="email" name="email" id="email"  class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label for="connu">
-							Comment nous avez-vous connu ?
-						</label>
-						<input type="text" name="connu" id="input_504" class="form-control" required  />
-					</div>
-					<div class="form-group">
-						<label for="message">
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label>
-						<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="envoyer">
-						Envoyer
-					</button>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
+	<!-- bloc-6 -->
+	<!-- SEO : remplacement de la div par une section -->
+	<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" role="banner" id="bloc-6">
+		<div class="container bloc-lg">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-center hero-bloc-text tc-white">
+						Parlons web design !
+					</h1>
+					<p class="text-center mg-lg tc-white tight-width-whitespace">
+						Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+						Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- bloc-7 END -->
+	</section>
+	<!-- bloc-6 END -->
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
+	<!-- bloc-7 -->
+	<!-- SEO : remplacement de la div par une section -->
+	<section class="bloc bgc-white l-bloc" id="bloc-7">
+		<div class="container bloc-lg">
+			<div class="row">
+				<div class="col-sm-6">
+
+					<!-- SEO : ajout titre niveau h2 -->
+					<h2 class="text-center">Contactez notre agence - Nos graphistes et UX designer se feront un plaisir de créer avec vous votre nouvelle identité virtuelle (à retravailler)</h2>
+					<form id="form_1">
+
+						<!-- Accessibilité : ajout du balisage ARIA -->
+						<div class="form-group">
+							<label for="name">
+								Nom
+							</label>
+							<input type="text" name="name" id="name" class="form-control" required />
+						</div>
+						<div class="form-group">
+							<label for="email">
+								Adresse email
+							</label>
+							<input type="email" name="email" id="email" class="form-control" required />
+						</div>
+						<div class="form-group">
+							<label for="input_504">
+								Comment nous avez-vous connu ?
+							</label>
+							<input type="text" name="input_504" id="input_504" class="form-control" required  />
+						</div>
+						<div class="form-group">
+							<label for="message">
+								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+							</label>
+							<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>
+						</div> 
+						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="envoyer">
+							Envoyer
+						</button>
+					</form>
+				</div>
+				<div class="col-sm-6">
+					<p>
+						contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- bloc-7 END -->
+
+	<!-- ScrollToTop Button -->
+	<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+	<!-- ScrollToTop Button END-->
 
 
-<!-- Footer - bloc-8 -->
-<!-- SEO : remplacement de la div par un footer -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" role="contentinfo" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
+	<!-- Footer - bloc-8 -->
+	<!-- SEO : remplacement de la div par un footer -->
+	<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+		<div class="container bloc-sm">
+			<div class="row">
+				<div class="col-sm-12">
 
-				<!-- SEO : remplacement du paragraphe par un titre de niveau h2 -->
-				<!-- Accessibilité : ajout balisage ARIA -->
-				<h2 class="text-center white">
-					La chouette agence - Agence web basée à Lyon<br>
-				</h2>
+					<!-- SEO : remplacement du paragraphe par un titre de niveau h2 -->
+					<!-- Accessibilité : ajout balisage ARIA -->
+					<h2 class="text-center white">
+						La chouette agence - Agence web basée à Lyon<br>
+					</h2>
 				
-				<div class="row row-no-gutters social" role="navigation" aria-label="footer">
+					<div class="row row-no-gutters social" role="navigation" aria-label="footer">
 
-					<!-- SEO : redirection des liens afin qu'ils ne pointent plus vers l'index du site mais bien vers les sites visés -->
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="twitter.com/" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
+						<!-- SEO : redirection des liens afin qu'ils ne pointent plus vers l'index du site mais bien vers les sites visés -->
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="twitter.com/" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="https://fr-fr.facebook.com/" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="https://fr-fr.facebook.com/" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="https://dribbble.com/" aria-label="Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="https://dribbble.com/" aria-label="Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/" aria-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="https://www.instagram.com/" aria-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+	</footer>
+	<!-- Footer - bloc-8 END -->
+
 	</div>
-</footer>
-<!-- Footer - bloc-8 END -->
-
-</div>
-<!-- Principal conteneur END -->
+	<!-- Principal conteneur END -->
     
-
 </body>
 </html>
