@@ -13,19 +13,21 @@ button {
     outline: none!important;
 }
 
+/* Accessibilité : retrait de l'attribut none pour accentuer l'information visuelle au survol */
 a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
+/* SEO : retrait de l'id car devenue obsolète du fait de la suppression de la div elle même. De plus, cette dernière avec z-index de 1000000 se retrouvait hors écran et enfreinait donc les règles WCAG */ 
+/* #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
+} */
 
 .bloc {
     width: 100%;
@@ -366,7 +368,8 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        /* Augmentation "right" afin que la navigation, en l'occurence l'onglet "Accueil" de la page 2 ne sorte plus du cadre */
+        right: 15%;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -508,6 +511,8 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    /* Try : gras remplissage formulaire */ 
+    font-weight: bold;
 }
 
 .scrollToTop {
@@ -658,8 +663,9 @@ a {
     max-width: 1000px;
 }
 
+/* Contact : taille police "parlons web design */
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 88px;
 }
 
 .hero-bloc-text-sub {
@@ -770,16 +776,20 @@ h4 {
     background-color: #364577;
 }
 
+/* Changement couleur bannière index bas, contact haut + bas */
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #bf5921;
+    color: #ffffff!important;
 }
 
+/* Changement couleur du texte */ 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff!important;
 }
 
+/* Changement couleur bouton "contact" et "envoyer" */
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #bf5921;
     color: #FFFFFF!important;
 }
 
@@ -848,13 +858,15 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/* Correction erreur W3C de la syntaxe */ 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+/* Correction : erreur W3C de la syntaxe */ 
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,20 +884,29 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+
+    /* Suppression : erreur W3C */
+        /*
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+        */
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
+
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        /* Suppression : erreur W3C */ 
+            /*
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+            */
     }
 }
 
@@ -1049,3 +1070,4 @@ h4 {
 }
 
 */
+
