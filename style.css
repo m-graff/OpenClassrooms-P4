@@ -343,6 +343,10 @@ blockquote{
 /* CONTACT : Encart h1 "La chouette agence, à vos côtés etc." */
 #bloc-1-hero h1 {
     font-size: 32px;
+
+        background: linear-gradient(to right, #c33b48, #f9ce50);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -510,7 +514,8 @@ nav .caret {
 /* CONTACT : Encart paragraphe sous h1 "Parlons web design" */
 .mg-lg {
     margin-top: 10px;
-    margin-bottom: 40px;
+
+    font-size: 1em;
 }
 
 /* CONTACT : bouton "Envoyer" */
@@ -1141,13 +1146,24 @@ h4 {
     }
 }
 
-/* MODIFICATIONS TEST
+/* MODIFICATIONS TEST */
 
-#bloc-6 {
-    height: 15rem;
-    background-color: #9D3801;
+/* TRY h1 contact 
+#test {
+    text-shadow:#e7f6ff 0 -1px 0,
+    #a80a02 1px 1px 0,
+    #dd3705 2px 2px 0,
+    #fd8e3a 3px 3px 0,
+    #9b0102 4px 4px 0,
+    #541402 5px 5px 0,
+    #333 5px 5px 10px;color:#f80015;
+    background-color:#bf5921;
 }
 */
 
-
-
+#test {
+    
+    
+   
+    
+}
