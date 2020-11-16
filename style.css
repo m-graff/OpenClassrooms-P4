@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 1px;
 }
 
 a,
@@ -206,7 +207,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc .panel button:hover,
@@ -772,7 +773,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .tight-width-whitespace {
@@ -805,6 +806,38 @@ h2 {
     font-size: 22px;
     line-height: 1.4em;
 }
+
+.title-lyon {
+    color: black;
+    padding: 20px;
+    letter-spacing: 1px;
+
+    
+}
+
+.title-realisations {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.title-orange {
+    color: #e7903c;
+    text-align: center;
+}
+
+.link-orange {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.link-orange:hover {
+    color: red;
+}
+
 
 h3 {
     font-size: 15px;
