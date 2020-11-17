@@ -77,98 +77,71 @@
 		<!-- bloc-6 -->
 		<!-- SEO : remplacement de la div par une section -->
 		<section class="bloc-banner-contact" role="banner" >
-			
-				
-					<div class="test-banner">
-						<h1 class="bloc-banner-contact-title">
-							Parlons web design !
-						</h1>
-						<p class="bloc-banner-contact-paragraphe">
-							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-						</p>
-					</div>
-				
-			
+
+			<div class="test-banner">
+				<h1 class="bloc-banner-contact-title">
+					Parlons web design !
+				</h1>
+				<p class="bloc-banner-contact-paragraphe">
+					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+				</p>
+			</div>	
 		</section>
 		<!-- bloc-6 END -->
 
 		<!-- bloc-7 -->
 		<!-- SEO : remplacement de la div par une section -->
 		<section class="bloc-form" id="bloc-7">
-			
-				
+	
+			<!-- SEO : ajout titre niveau h2 -->
+			<form class="contact-form">
+			<h2 class="contact-form-title">Contactez nous !</h2>
 
-						<!-- SEO : ajout titre niveau h2 -->
+				<!-- Accessibilité : ajout du balisage ARIA -->
+				<div class="form-group">
+					<label for="name">
+						Nom
+					</label>
+					<input type="text" name="name" id="name" placeholder="Entrez votre nom" />
+				</div>
 
-						<form class="contact-form">
-						<h2 class="contact-form-title">Contactez nous !</h2>
+				<div class="form-group">
+					<label for="email">
+						Email :
+					</label>
+					<input type="email" name="email" id="email" placeholder="Entrez votre email" />
+				</div>
 
-							<!-- Accessibilité : ajout du balisage ARIA -->
-							<div class="form-group">
-								<label for="name">
-									Nom
-								</label>
-								<input type="text" name="name" id="name" placeholder="Entrez votre nom" />
-							</div>
+				<div class="form-group">
+					<label for="connu">
+						Comment nous avez-vous connu ?
+					</label>
+					<input type="text" name="connu" id="connu" placeholder="Comment avez-vous entendu parler de nous ?"/>
+				</div>
 
-							<div class="form-group">
-								<label for="email">
-									Email :
-								</label>
-								<input type="email" name="email" id="email" placeholder="Entrez votre email" />
-							</div>
+				<div class="form-group">
+					<label for="message">
+						Brief de votre projet (Ajoutez autant de détails que nécessaire)
+					</label>
+					<textarea></textarea>
+				</div> 
 
-							<div class="form-group">
-								<label for="connu">
-									Comment nous avez-vous connu ?
-								</label>
-								<input type="text" name="connu" id="connu" placeholder="Comment avez-vous entendu parler de nous ?"/>
-							</div>
-
-							<div class="form-group">
-								<label for="message">
-									Brief de votre projet (Ajoutez autant de détails que nécessaire)
-								</label>
-								<textarea></textarea>
-							</div> 
-
-							<button class="btn-form" type="submit" aria-label="envoyer">
-								Envoyer
-							</button>
-						</form>
-					</div>
-					
-					<!-- A DEPLACER FOOTER 
-					<div class="col-sm-6">
-						<p>
-							contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-						</p>
-					</div>
-				-->
-			</div>
+				<button class="btn-form" type="submit" aria-label="envoyer">
+					Envoyer
+				</button>
+			</form>		
 		</section>
 		<!-- bloc-7 END -->
 
-		<!-- ScrollToTop Button -->
-		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-		<!-- ScrollToTop Button END-->
-
-
+		<!-- Suppresion du bouton ScrollToTop Button -->
+		
 		<!-- Footer - bloc-8 -->
-		<!-- SEO : remplacement de la div par un footer -->
-
-		<!-- ESSAI 
-		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-			<div class="container bloc-sm" id="footer-distributed">
-		-->
-
+		<!-- SEO / Accessibilité : refonte totale du footer -->
 		<footer class="footer-distributed">
 				
 			<div class="footer-left" role="navigation" aria-label="site-map">
 
-				<!-- SEO : remplacement du paragraphe par un titre de niveau h2 -->
-				<!-- Accessibilité : ajout balisage ARIA -->
 				<h2 class="footer-title">
 					La chouette agence<span>
 						<img src="img/logo.png" class="footer-logo" width="50" alt="Agence web design Lyon" />
