@@ -20,16 +20,6 @@ a:hover {
     cursor: pointer;
 }
 
-/* SEO : retrait de l'id car devenue obsolète du fait de la suppression de la div elle même. De plus, cette dernière avec z-index de 1000000 se retrouvait hors écran et enfreinait donc les règles WCAG */ 
-/* #page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-} */
-
 .bloc {
     width: 100%;
     clear: both;
@@ -50,9 +40,6 @@ a:hover {
 
 /* TRY : taille bloc index contact */
 .bloc-lg {
-    /*
-    padding: 100px 50px;
-    */
     padding: 50px;
 }
 
@@ -98,14 +85,6 @@ a:hover {
     left: 0;
     right: 0;
 }
-
-/* Accessibilité : suppresion background pour un meilleur contraste */
-    /*
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
-    */
 
 .b-parallax {
     background-attachment: fixed;
@@ -250,7 +229,6 @@ a:hover {
     color: black;
 }
 
-
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
 .l-bloc .navbar a:hover,
@@ -298,9 +276,9 @@ blockquote{
     line-height:1.8;
     position: relative;
     background:#EDEDED;
-  }
+}
   
-  blockquote::before{
+blockquote::before{
     font-family:Arial;
     content: "\201C";
     color:#78C0A8;
@@ -308,17 +286,17 @@ blockquote{
     position: absolute;
     left: 10px;
     top:-10px;
-  }
+}
   
-  blockquote::after{
+blockquote::after{
     content: '';
-  }
+}
 
-  blockquote p {
-      font-size: 0.8em;
-  }
+blockquote p {
+    font-size: 0.8em;
+}
   
-  .source-citation{
+.source-citation{
     display:block;
     color:#333333;
     font-style: normal;
@@ -328,10 +306,7 @@ blockquote{
 
 /* INDEX : Espace encart "web design, stratégie, illustrations" et bloc citation */
 .voffset-lg {
-        /*
-    margin-top: 80px;
-        */
-        margin-top: 50px;
+    margin-top: 50px;
 }
 
 /* INDEX + CONTACT : encart footer social media */
@@ -349,10 +324,9 @@ blockquote{
 /* CONTACT : Encart h1 "La chouette agence, à vos côtés etc." */
 #bloc-1-hero h1 {
     font-size: 32px;
-
-        background: linear-gradient(to right, #c33b48, #f9ce50);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #c33b48, #f9ce50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -387,136 +361,20 @@ blockquote{
 
 /* INDEX + CONTACT : Encart header "Contact" */
 .navbar .nav {
-   
-    
     margin-right: -16px;
     float: right;
-    
-    
 }
-
-
 
 /* == contenu prop précédente */
 .nav > li {
-    
     float: left;
     margin-top: 4px;
     font-size: 16px;
 }
 
-.navbar-nav .open .dropdown-menu > li > a {
-    text-align: inherit;
-    
-}
-
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
-}
-
-
-/* TRY : élément "toggle" supprimé */
-    /*
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
-
-.navbar-toggle:hover {
-    background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
-}
-    */
-
-.nav-invert .navbar .nav {
-    float: left;
-}
-
-.nav-invert .navbar-header,
-.nav-invert .navbar-brand {
-    float: right;
-    position: relative;
-    z-index: 2;
-}
-
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        /* Augmentation "right" afin que la navigation, en l'occurence l'onglet "Accueil" de la page 2 ne sorte plus du cadre (right: 20% en essai) */
-
-        right: 15px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
-
-.nav > li > .dropdown a {
-    background: none!important;
-    display: block;
-    padding: 14px 15px;
-}
-
-nav .caret {
-    margin: 0 5px;
-}
-
-.dropdown-menu .dropdown-menu {
-    top: -8px;
-    left: 100%;
-}
-
-.dropdown-menu .dropmenu-flow-right {
-    top: 100%;
-    left: 0;
-    margin-left: -1px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.dropdown-menu .dropdown span {
-    border: 4px solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
-    float: right;
 }
 
 .mg-md {
@@ -527,7 +385,6 @@ nav .caret {
 /* CONTACT : Encart paragraphe sous h1 "Parlons web design" */
 .mg-lg {
     margin-top: 10px;
-
     font-size: 1em;
 }
 
@@ -598,26 +455,6 @@ button {
     box-shadow: none;
     /* Try : gras remplissage formulaire */ 
     font-weight: bold;
-}
-
-.scrollToTop {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    z-index: 500;
-    transition: all .3s ease-in-out;
-}
-
-.scrollToTop span {
-    margin-top: 6px;
-}
-
-.showScrollTop {
-    font-size: 14px;
-    opacity: 1;
 }
 
 /* INDEX : Encart 4 photos + */
@@ -730,24 +567,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-
-/* TRY BANNER CONTACT 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
-*/
-
 .container {
     max-width: 1000px;
 }
@@ -811,12 +630,9 @@ h2 {
 .title-lyon {
     width: 80%;
     margin: auto;
-
     color: black;
     padding: 20px;
     letter-spacing: 1px;
-
-    
 }
 
 .title-realisations {
@@ -839,9 +655,6 @@ h2 {
     color: inherit;
 }
 
-
-
-
 h3 {
     font-size: 15px;
     text-transform: uppercase;
@@ -855,12 +668,6 @@ h3 {
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
-
-/* TRY BANNER CONTACT 
-h1 {
-    color: #333333!important;
-}
-*/
 
 h4 {
     color: #333333!important;
@@ -892,7 +699,8 @@ h4 {
 /* INDEX : Encart " Nous souhaitons aider.. Contactez notre.. " */
 .black-background {
     background-color: rgba(19, 18, 16, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 2%;
+    width: 55%;
 }
 
 /* INDEX : lien "Contactez notre équipe" */ 
@@ -931,11 +739,9 @@ h4 {
     color: #FFFFFF!important;
 }
 
-
 /* INDEX : "contactez notre équipe" */
 .ltc-white {
     color: #FFFFFF!important;
-    
     font-size: 1.3em;
 }
 
@@ -972,6 +778,251 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+
+
+/* MODIFICATIONS TEST */
+
+/* Bannière contact */
+.bloc-banner-contact {
+    display: flex;
+    height: 200px;
+    background-image: url("img/dots-bg.png");
+    background-color: #bf5921;
+}
+
+.test-banner {
+   margin: auto;
+   text-align: center;
+}
+
+.bloc-banner-contact-title {
+    font-family: "helvetica";
+    font-size: 2.3em;
+    color: #FFFFFF;
+}
+
+.bloc-banner-contact-paragraphe {
+    font-family: "helvetica";
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+
+/* Formulaire contact */
+.bloc-form {
+    display: flex;
+    padding: 50px;
+}
+
+.contact-form{
+    margin: auto;
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat",sans-serif;
+}
+
+.contact-form h2 {
+   margin-top: 0;
+  font-weight: 200;
+}
+
+.form-group {
+    border:1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.form-group label {
+    display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.btn-form {
+    display: inline-block;
+  background: #bf5921;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
+
+
+
+/* Footer */
+.footer-logo {
+    background: none;
+}
+
+.footer-distributed {
+    display: flex;
+	background: #bf5921;
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+.footer-distributed h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	color:  #ffffff;
+	margin: 0;
+}
+
+.footer-distributed h2 span {
+    color:  white;
+    margin-left: 15px;
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a {
+	line-height: 1.8;
+    font-weight: 400;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer-distributed .footer-chouette-agence{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #bf5921;
+    color: white;
+    border: white solid 1px;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p a {
+	color:  rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-horaires {
+    color: white;
+    font-weight: 400;
+}
+
+.footer-distributed .footer-chouette-agence{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+	width: 35px;
+    height: 35px;
+    text-align: center;
+	line-height: 35px;
+	margin-right: 5px;
+	cursor: pointer;
+    background-color: #bf5921;
+    border: white 1px solid;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -986,6 +1037,8 @@ h4 {
     }
 }
 
+
+
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
@@ -995,19 +1048,7 @@ h4 {
     }
 }
 
-/* Correction erreur W3C de la syntaxe */ 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
 
-/* Correction : erreur W3C de la syntaxe */ 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
 
 @media (max-width: 991px) {
     .container {
@@ -1022,14 +1063,6 @@ h4 {
         position: relative;
     }
 
-    /* Suppression : erreur W3C */
-        /*
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-        */
-
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1039,13 +1072,55 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        /* Suppression : erreur W3C */ 
-            /*
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-            */
     }
 }
+
+
+
+@media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        /* Augmentation "right" afin que la navigation, en l'occurence l'onglet "Accueil" de la page 2 ne sorte plus du cadre (right: 20% en essai) */
+
+        right: 15px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+        color: #484848;
+    }
+    .nav-invert .site-navigation {
+        left: 0;
+        right: 0;
+    }
+    .nav-center {
+        text-align: center;
+    }
+    .nav-center .navbar-header {
+        width: 100%;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-center .site-navigation {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+        float: none;
+        margin: 10px auto 0;
+    }
+}
+
+
 
 @media (max-width: 767px) {
     .page-container {
@@ -1123,13 +1198,7 @@ h4 {
         max-height: 40px;
         width: auto;
     }
-    .nav-invert .navbar-header {
-        float: none;
-        width: 100%;
-    }
-    .nav-invert .navbar-toggle {
-        float: left;
-        margin-left: 10px;
+    
     }
     .bloc {
         padding-left: 0;
@@ -1184,7 +1253,27 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+
+
+    .black-background {
+        width: 90%;
+    }
+
+    
 }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 400px) {
     .bloc {
@@ -1193,375 +1282,145 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+
+
+
+/* Correction erreur W3C de la syntaxe */ 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+}
+
+/* Correction : erreur W3C de la syntaxe */ 
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
     }
 }
 
 
 
 
-/* MODIFICATIONS TEST */
-
-
-/* Bannière contact */
-.bloc-banner-contact {
-    display: flex;
-    height: 200px;
-    background-image: url("img/dots-bg.png");
-    background-color: #bf5921;
-}
-
-.test-banner {
-   margin: auto;
-   text-align: center;
-}
-
-.bloc-banner-contact-title {
-    font-family: "helvetica";
-    font-size: 2.3em;
-    color: #FFFFFF;
-}
-
-.bloc-banner-contact-paragraphe {
-    font-family: "helvetica";
-    font-size: 1em;
-    color: #FFFFFF;
-}
-
-
-/* Formulaire contact 
-
-max-width: 1000px;
-
-padding: 50px;
-
-*/
-
-.bloc-form {
-    display: flex;
-   
-    padding: 50px;
-}
-
-.contact-form{
-   margin: auto;
-
-    width: 85%;
-    max-width: 600px;
-    background: #f1f1f1;
-    padding: 30px 40px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 20px #000000b3;
-    font-family: "Montserrat",sans-serif;
-}
-
-.contact-form h2 {
-   margin-top: 0;
-  font-weight: 200;
-}
-
-.form-group {
-    border:1px solid gray;
-    margin: 8px 0;
-    padding: 12px 18px;
-    border-radius: 8px;
-}
-
-.form-group label {
-    display: block;
-  text-align: left;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 18px;
-  margin-top: 6px;
-}
-
-.btn-form {
-    display: inline-block;
-  background: #bf5921;
-  padding: 14px 0;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 8px;
-  width: 100%;
-}
-
-
-
-
-
-
-
-
-/* TRY FOOTER */
-
-.footer-logo {
-    background: none;
-}
-
-
-
+/* Essai responsive 
 .footer-distributed {
-    
-
-    display: flex;
-	background: #bf5921;
-	box-sizing: border-box;
-	width: 100%;
-	font: bold 16px sans-serif;
-    padding: 55px 50px;
-}
-
-
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-    width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-	color:  #ffffff;
-	margin: 0;
-}
-
-.footer-distributed h2 span{
-    color:  white;
-    margin-left: 15px;
-    
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	
-	line-height: 1.8;
-    font-weight: 400;
-	text-decoration: none;
-	color: inherit;
-}
-
-.footer-distributed .footer-chouette-agence{
-	color:  white;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-.footer-distributed .footer-center i{
-    background-color: #bf5921;
-    color: white;
-    border: white solid 1px;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-    font-weight:400;
-	vertical-align: middle;
-    margin:0;
-}
-
-.footer-distributed .footer-center p a{
-	color:  rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight: 300;
-  font-size: 20px;
-  color: #fff;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-    width: 20%;
-}
-
-.footer-horaires {
-    color: white;
-    font-weight: 400;
-}
-
-.footer-distributed .footer-chouette-agence{
-	line-height: 20px;
-	color:  #ffffff;
-	font-size: 13px;
-	font-weight: normal;
-    margin: 0;
-}
-
-
-
-.footer-distributed .footer-icons{
-    margin-top: 25px;
-    
-}
-
-.footer-distributed .footer-icons a{
-    
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-    background-color: #bf5921;
-    border: white 1px solid;
-    border-radius: 5px;
-    
-
-	font-size: 20px;
-	color: white;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 5px;
-	
-}
-
-
-
-
-/* TRY h1 contact 
-#test {
-    text-shadow:#e7f6ff 0 -1px 0,
-    #a80a02 1px 1px 0,
-    #dd3705 2px 2px 0,
-    #fd8e3a 3px 3px 0,
-    #9b0102 4px 4px 0,
-    #541402 5px 5px 0,
-    #333 5px 5px 10px;color:#f80015;
-    background-color:#bf5921;
+    flex-direction: column;
 }
 */
 
-/* TRY formulaire 
-.form-style-6{
-	font: 95% Arial, Helvetica, sans-serif;
-	max-width: 650px;
-	margin: 50px auto;
-	padding: 30px;
-	background: #F7F7F7;
+
+
+
+
+
+
+
+
+
+/* SEO : retrait de l'id car devenue obsolète du fait de la suppression de la div elle même. De plus, cette dernière avec z-index de 1000000 se retrouvait hors écran et enfreinait donc les règles WCAG */ 
+/* #page-loading-blocs-notifaction {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000;
+    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+} */
+
+/* Accessibilité : suppresion background pour un meilleur contraste */
+    /*
+.texture-paper::before {
+    background: url("img/texture-paper.png");
+    background-size: 280px 280px;
 }
-.form-style-6 h2{
-	background: #bf5921;
-	padding: 20px 0;
-	font-size: 140%;
-	font-weight: 300;
-	text-align: center;
-	color: #fff;
-	margin: -16px -16px 16px -16px;
-}
-.form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
-.form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
-.form-style-6 textarea,
-.form-style-6 select 
-{
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-	outline: none;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	width: 100%;
-	background: #fff;
-	margin-bottom: 4%;
-	border: 1px solid #ccc;
-	padding: 3%;
-	color: #555;
-	font: 95% Arial, Helvetica, sans-serif;
-}
-.form-style-6 input[type="text"]:focus,
-.form-style-6 input[type="date"]:focus,
-.form-style-6 input[type="datetime"]:focus,
-.form-style-6 input[type="email"]:focus,
-.form-style-6 input[type="number"]:focus,
-.form-style-6 input[type="search"]:focus,
-.form-style-6 input[type="time"]:focus,
-.form-style-6 input[type="url"]:focus,
-.form-style-6 textarea:focus,
-.form-style-6 select:focus
-{
-	box-shadow: 0 0 5px #43D1AF;
-	padding: 3%;
-	border: 1px solid #43D1AF;
+    */
+
+
+/* Elément "toggle" supprimé */
+/* .navbar-toggle {
+    margin: 10px 10px 0 0;
+    border: 0px;
 }
 
-.form-style-6 input[type="submit"],
-.form-style-6 input[type="button"]{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	width: 100%;
-	padding: 3%;
-	background: #43D1AF;
-	border-bottom: 2px solid #30C29E;
-	border-top-style: none;
-	border-right-style: none;
-	border-left-style: none;	
-	color: #fff;
+.navbar-toggle:hover {
+    background: transparent!important;
 }
-.form-style-6 input[type="submit"]:hover,
-.form-style-6 input[type="button"]:hover{
-	background: #2EBC99;
-}
-*/ 
 
+.navbar-toggle .icon-bar {
+    background-color: rgba(0, 0, 0, .5);
+    width: 26px;
+}
+    
+.nav-invert .navbar .nav {
+    float: left;
+}
+
+.nav-invert .navbar-header,
+.nav-invert .navbar-brand {
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+.nav > li > .dropdown a {
+    background: none!important;
+    display: block;
+    padding: 14px 15px;
+}
+
+nav .caret {
+    margin: 0 5px;
+}
+
+.dropdown-menu .dropdown-menu {
+    top: -8px;
+    left: 100%;
+}
+
+.dropdown-menu .dropmenu-flow-right {
+    top: 100%;
+    left: 0;
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.dropdown-menu .dropdown span {
+    border: 4px solid black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin: 6px -5px 0 0!important;
+    float: right;
+}
+*/
+
+/*
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    z-index: 500;
+    transition: all .3s ease-in-out;
+}
+
+.scrollToTop span {
+    margin-top: 6px;
+}
+
+.showScrollTop {
+    font-size: 14px;
+    opacity: 1;
+}
+*/
+
+ /* Suppression : erreur W3C */
+        /*
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
+        */
