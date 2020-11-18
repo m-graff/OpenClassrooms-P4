@@ -315,7 +315,7 @@ blockquote{
   }
 
   blockquote p {
-      font-size: 0.7em;
+      font-size: 0.8em;
   }
   
   .source-citation{
@@ -805,9 +805,13 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    font-weight: bold;
 }
 
 .title-lyon {
+    width: 80%;
+    margin: auto;
+
     color: black;
     padding: 20px;
     letter-spacing: 1px;
@@ -1311,8 +1315,9 @@ padding: 50px;
 
 
 .footer-distributed {
-    display: flex;
+    
 
+    display: flex;
 	background: #bf5921;
 	box-sizing: border-box;
 	width: 100%;
@@ -1320,12 +1325,7 @@ padding: 50px;
     padding: 55px 50px;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	
-	
-}
+
 
 /* Footer left */
 
