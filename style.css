@@ -1299,6 +1299,7 @@ input:focus {
 
     .footer-distributed .footer-right {
         width: auto;
+        padding-top: 30px;
     }
 
     .footer-chouette-agence {
@@ -1314,8 +1315,6 @@ input:focus {
     }
 
 
-
-
     /* 4 img index */
     .portfolio-row {
         margin: auto;
@@ -1327,6 +1326,11 @@ input:focus {
     }
 
 
+
+
+    .tc-white {
+        
+    }
 
 
 }
