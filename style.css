@@ -1267,12 +1267,74 @@ input:focus {
     }
 
 
+
+    /* TRY RESPONSIVE */
+
     .black-background {
         width: 90%;
     }  
+
+    .bloc-form {
+        padding: 40px 5px 30px 5px;
+    }
+
+
+    /* Footer */
+    .footer-distributed {
+        flex-direction: column;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        margin: auto;
+    }
+
+
+    .footer-distributed .footer-left  {
+        width: auto;
+    }
+
+    .footer-distributed .footer-center {
+        width: auto;
+    }
+
+    .footer-distributed .footer-right {
+        width: auto;
+    }
+
+    .footer-chouette-agence {
+        padding-bottom: 10%;
+    }
+
+    .footer-right {
+        padding-top: 10%;
+    }
+
+    .footer-icons {
+        text-align: center;
+    }
+
+
+
+
+    /* 4 img index */
+    .portfolio-row {
+        margin: auto;
+    }
+
+    .portfolio-thumb {
+        margin: auto;
+        padding: 40px 0 10px 0;
+    }
+
+
+
+
 }
 
-
+/* TRY nouveau break-point */
+@media (max-width: 481px) {
+ 
+}
 
 
 
