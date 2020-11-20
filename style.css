@@ -122,7 +122,7 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a, {
+.d-bloc h6 a {
     color: rgba(255, 255, 255, .6);
 }
 
@@ -777,6 +777,84 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+/* Bouton toggle */
+.navbar-toggle {
+    margin: 10px 10px 0 0;
+    border: 0px;
+}
+
+.navbar-toggle:hover {
+    background: transparent!important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: rgba(0, 0, 0, .5);
+    width: 26px;
+}
+    
+.nav-invert .navbar .nav {
+    float: left;
+}
+
+.nav-invert .navbar-header,
+.nav-invert .navbar-brand {
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+.nav > li > .dropdown a {
+    background: none!important;
+    display: block;
+    padding: 14px 15px;
+}
+
+nav .caret {
+    margin: 0 5px;
+}
+
+.dropdown-menu .dropdown-menu {
+    top: -8px;
+    left: 100%;
+}
+
+.dropdown-menu .dropmenu-flow-right {
+    top: 100%;
+    left: 0;
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.dropdown-menu .dropdown span {
+    border: 4px solid black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin: 6px -5px 0 0!important;
+    float: right;
+}
+
+ /* Scrolling element */
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+
+.scrollToTop span {
+    margin-top: 6px;
+}
+
+.showScrollTop {
+    font-size: 14px;
+    opacity: 1;
+}
 
 
 /* MODIFICATIONS TEST */
@@ -790,8 +868,8 @@ h4 {
 }
 
 .test-banner {
-   margin: auto;
-   text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
 .bloc-banner-contact-title {
@@ -827,8 +905,8 @@ h4 {
 }
 
 .contact-form h2 {
-   margin-top: 0;
-  font-weight: 200;
+    margin-top: 0;
+    font-weight: 200;
 }
 
 .form-group {
@@ -841,41 +919,34 @@ h4 {
 .form-group label {
     font-weight: 500;
     display: block;
-  text-align: left;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 15px;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 .form-group input, .form-group textarea {
     
     width: 100%;
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 14px;
-  margin-top: 6px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+    margin-top: 6px;
 }
 
 .btn-form {
     display: inline-block;
-  background: #bf5921;
-  padding: 14px 0;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 8px;
-  width: 100%;
-  border: 1px solid transparent;
-  border-radius: 5px;
+    background: #bf5921;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
-
-/*
-input:focus {
-    background-color: red;
-*/
-
-
 
 
 /* Footer */
@@ -890,8 +961,6 @@ input:focus {
 	width: 100%;
 	font: bold 16px sans-serif;
     padding: 55px 50px;
-
-
 }
 
 /* Footer left */
@@ -972,15 +1041,15 @@ input:focus {
 }
 
 .footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight: 300;
-  font-size: 20px;
-  color: #fff;
-  padding-right: 5px;
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    padding-right: 5px;
 }
 
 .footer-distributed .footer-links .link-1:before {
-  content: none;
+    content: none;
 }
 
 /* Footer Right */
@@ -994,7 +1063,7 @@ input:focus {
 }
 
 .footer-distributed .footer-chouette-agence{
-	line-height: 20px;
+    line-height: 20px;
 	color:  #ffffff;
 	font-size: 13px;
 	font-weight: normal;
@@ -1278,7 +1347,6 @@ input:focus {
         padding: 40px 5px 30px 5px;
     }
 
-
     /* Footer */
     .footer-distributed {
         flex-direction: column;
@@ -1287,7 +1355,6 @@ input:focus {
     .footer-left, .footer-center, .footer-right {
         margin: auto;
     }
-
 
     .footer-distributed .footer-left  {
         width: auto;
@@ -1314,7 +1381,6 @@ input:focus {
         text-align: center;
     }
 
-
     /* 4 img index */
     .portfolio-row {
         margin: auto;
@@ -1324,25 +1390,7 @@ input:focus {
         margin: auto;
         padding: 40px 0 10px 0;
     }
-
-
-
-
-    .tc-white {
-        
-    }
-
-
 }
-
-/* TRY nouveau break-point */
-@media (max-width: 481px) {
- 
-}
-
-
-
-
 
 
 
@@ -1353,8 +1401,6 @@ input:focus {
         padding-right: 0;
     }
 }
-
-
 
 
 /* Correction erreur W3C de la syntaxe */ 
@@ -1370,22 +1416,6 @@ input:focus {
         background-attachment: scroll;
     }
 }
-
-
-
-
-/* Essai responsive 
-.footer-distributed {
-    flex-direction: column;
-}
-*/
-
-
-
-
-
-
-
 
 
 
@@ -1411,83 +1441,6 @@ input:focus {
 
 
 
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
 
-.navbar-toggle:hover {
-    background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
-}
-    
-.nav-invert .navbar .nav {
-    float: left;
-}
-
-.nav-invert .navbar-header,
-.nav-invert .navbar-brand {
-    float: right;
-    position: relative;
-    z-index: 2;
-}
-
-.nav > li > .dropdown a {
-    background: none!important;
-    display: block;
-    padding: 14px 15px;
-}
-
-nav .caret {
-    margin: 0 5px;
-}
-
-.dropdown-menu .dropdown-menu {
-    top: -8px;
-    left: 100%;
-}
-
-.dropdown-menu .dropmenu-flow-right {
-    top: 100%;
-    left: 0;
-    margin-left: -1px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.dropdown-menu .dropdown span {
-    border: 4px solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
-    float: right;
-}
-*/
-
-
-.scrollToTop {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    z-index: 1;
-    transition: all .3s ease-in-out;
-}
-
-.scrollToTop span {
-    margin-top: 6px;
-}
-
-.showScrollTop {
-    font-size: 14px;
-    opacity: 1;
-}
 
 
