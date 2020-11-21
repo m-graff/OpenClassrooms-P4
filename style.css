@@ -323,9 +323,10 @@ blockquote p {
 /* CONTACT : Encart h1 "La chouette agence, à vos côtés etc." */
 #bloc-1-hero h1 {
     font-size: 32px;
-    background: linear-gradient(to right, #c33b48, #f9ce50);
+    background: linear-gradient(to right, #fc5000, #fccc51);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 }
 
 .navbar {
@@ -644,12 +645,12 @@ h2 {
 }
 
 .title-orange {
-    color: #e7903c;
+    color: #ffffff;
     text-align: center;
 }
 
 .link-orange {
-    color: #e7903c;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.1em;
 }
