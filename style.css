@@ -1090,16 +1090,28 @@ nav .caret {
 }
 
 
+/* TRY DARK MODE CSS */ 
 
+@media (prefers-color-scheme: dark) {
 
+    html {
+      filter: invert(1) hue-rotate(.5turn);
+    }
+  
+    img {
+      filter: invert(1) hue-rotate(.5turn);
+    }
+  
+    img:not(:hover) {
+      opacity: .9;
+      transition: opacity .25s ease-in-out;
+    }
 
-
-
-
-
-
-
-
+    .navbar-brand img {
+        filter: invert(0) hue-rotate(.5turn);
+    }
+}
+ 
 /* MEDIA QUERIES */
 
 @media (max-width: 1024px) {
@@ -1389,6 +1401,10 @@ nav .caret {
     .portfolio-thumb {
         margin: auto;
         padding: 40px 0 10px 0;
+    }
+
+    #title-banner2 {
+        margin: 10px;
     }
 }
 
