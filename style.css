@@ -32,7 +32,7 @@ a:hover {
     position: relative;
 }
 
-/* TRY : placement "parlons web design + textes */
+/* Placement "parlons web design + textes */
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
@@ -423,7 +423,7 @@ button {
 
 /* INDEX + CONTACT : icone social media footer */
 .icon-md {
-    font-size: 30px!important;
+    font-size: 20px!important;
 }
 
 .icon-lg {
@@ -455,7 +455,6 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-    /* Try : gras remplissage formulaire */ 
     font-weight: bold;
 }
 
@@ -573,7 +572,6 @@ a[data-lightbox]:hover img {
     max-width: 1000px;
 }
 
-/* TRY : Contact - bloc "parlons web design + h1 index */
 .hero-bloc-text {
     font-size: 45px;
     text-align: center;
@@ -862,9 +860,6 @@ nav .caret {
     opacity: 1;
 }
 
-
-/* MODIFICATIONS TEST */
-
 /* Bannière contact */
 .bloc-banner-contact {
     display: flex;
@@ -889,7 +884,6 @@ nav .caret {
     font-size: 1em;
     color: #FFFFFF;
 }
-
 
 /* Formulaire contact */
 .bloc-form {
@@ -932,7 +926,6 @@ nav .caret {
 }
 
 .form-group input, .form-group textarea {
-    
     width: 100%;
     border: none;
     background: none;
@@ -953,7 +946,6 @@ nav .caret {
     border: 1px solid transparent;
     border-radius: 5px;
 }
-
 
 /* Footer */
 .footer-logo {
@@ -1014,7 +1006,7 @@ nav .caret {
 	width: 35%;
 }
 
-.footer-distributed .footer-center i {
+.footer-distributed .footer-center span {
     background-color: #bf5921;
     color: white;
     border: white solid 1px;
@@ -1028,8 +1020,8 @@ nav .caret {
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
-	font-size: 17px;
+.footer-distributed .footer-center span.fa-envelope {
+	font-size: 20px;
 	line-height: 38px;
 }
 
@@ -1095,9 +1087,9 @@ nav .caret {
     border-radius: 5px;
 }
 
+/* MEDIA QUERIES */
 
-/* TRY DARK MODE CSS */ 
-
+/* DARK MODE */ 
 @media (prefers-color-scheme: dark) {
 
     html {
@@ -1117,8 +1109,6 @@ nav .caret {
         filter: invert(0) hue-rotate(.5turn);
     }
 }
- 
-/* MEDIA QUERIES */
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1134,8 +1124,6 @@ nav .caret {
     }
 }
 
-
-
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
@@ -1144,8 +1132,6 @@ nav .caret {
         max-width: 100%
     }
 }
-
-
 
 @media (max-width: 991px) {
     .container {
@@ -1172,14 +1158,10 @@ nav .caret {
     }
 }
 
-
-
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
         top: 50%;
-        /* Augmentation "right" afin que la navigation, en l'occurence l'onglet "Accueil" de la page 2 ne sorte plus du cadre (right: 20% en essai) */
-
         right: 15px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
@@ -1216,8 +1198,6 @@ nav .caret {
         margin: 10px auto 0;
     }
 }
-
-
 
 @media (max-width: 767px) {
     .page-container {
@@ -1353,10 +1333,6 @@ nav .caret {
         text-align: center;
     }
 
-
-
-    /* TRY RESPONSIVE */
-
     .black-background {
         width: 90%;
     }  
@@ -1414,16 +1390,12 @@ nav .caret {
     }
 }
 
-
-
-
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
 }
-
 
 /* Correction erreur W3C de la syntaxe */ 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -1439,25 +1411,25 @@ nav .caret {
     }
 }
 
+/* SUPPRESSIONS
 
-
-/* SEO : retrait de l'id car devenue obsolète du fait de la suppression de la div elle même. De plus, cette dernière avec z-index de 1000000 se retrouvait hors écran et enfreinait donc les règles WCAG */ 
-/* #page-loading-blocs-notifaction {
+SEO : retrait de l'id car devenue obsolète du fait de la suppression de la div elle même. De plus, cette dernière avec z-index de 1000000 se retrouvait hors écran et enfreinait donc les règles WCAG 
+#page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-} */
+} 
 
-/* Accessibilité : suppresion background pour un meilleur contraste */
-    /*
+Accessibilité : suppresion background pour un meilleur contraste 
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
-    */
+
+*/
 
 
 
