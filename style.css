@@ -301,7 +301,14 @@ blockquote p {
     font-style: normal;
     font-weight: bold;
     margin-top:1em;
-  }
+}
+
+figcaption {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333!important;
+}
 
 /* INDEX : Espace encart "web design, stratégie, illustrations" et bloc citation */
 .voffset-lg {
